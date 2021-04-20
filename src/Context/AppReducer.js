@@ -5,6 +5,11 @@ const AppReducer = (state, action) => {
                 ...state,
                 watchList: [action.payload, ...state.watchList ],
             };
+        case "SEND_MOVIE_TO_WATCHLIST":
+            return {
+                ...state,
+                watched: [action.payload, ...state.watched ],
+            };
         case "REMOVE_MOVIE_FROM_WATCHLIST":
             return {
                 ...state,

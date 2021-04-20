@@ -29,11 +29,15 @@ time, mark, audio, video {
 
 body {
     font-family: "Source Sans Pro", sans-serif;
-    height: 100vh;
-    background: #f9f9f9;
     padding: 0;
     margin: 0;
+    background: #f9f9f9;
     /*background: #18191a;*/
+}
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -119,7 +123,7 @@ header a:hover {
     opacity: 0.7;
 }
 
-header .brand a {
+.brand a {
     background: linear-gradient(to right, #86cca6 0%, #09b4e0 100%); /* Градиент для текста */
     -webkit-background-clip: text; /* Обрезаем фон по тексту */
     -webkit-text-fill-color: transparent; /* Прозрачный текст */
@@ -210,8 +214,8 @@ header .nav-links li:last-child {
 
 .results {
     padding: 0;
-    margin: 0;
-    margin-top: 20px;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .results li {
@@ -374,3 +378,19 @@ header .nav-links li:last-child {
     text-align: center;
 }
 
+.footer{
+    margin-top: auto;
+    background: linear-gradient(to bottom, #032039 0%, #032541 100%);
+}
+.footer-info{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-info p a{
+    color: #02b5e1;
+}
