@@ -32,7 +32,7 @@ const AddFilm = () => {
                     <div className="container">
                     <div className="input-section-title">
                        <h2 className="input-title">Welcome.</h2>
-                        <h3 className="input-title-descr">Millions of movies, TV shows and people to discover. Explore now.</h3>
+                        <h3 className="input-title-descr">Millions of movie to discover. Explore now.</h3>
                     </div>
                     <div className="input-wrapper">
                         <input type="text" placeholder="Search for a movie" value={inputText} onChange={onInputChange}/>
