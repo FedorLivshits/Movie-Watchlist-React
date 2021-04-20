@@ -12,7 +12,7 @@ const Header = () => {
 
                     <ul className="nav-links">
                         <li>
-                            <Link to="/">Watch List</Link>
+                            <Link to="/watchlist">Watch List</Link>
                         </li>
 
                         <li>
@@ -20,7 +20,7 @@ const Header = () => {
                         </li>
 
                         <li>
-                            <Link to="/add" className="btn btn-main">
+                            <Link to="/" className="btn btn-main">
                                 + Add
                             </Link>
                         </li>

@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import axios from "axios";
 import ResultCard from "./ResultCard";
 
-
 const AddFilm = () => {
    const[inputText, setInputText] = useState('')
    const[result, setResult] = useState([])
@@ -29,8 +28,8 @@ const AddFilm = () => {
 
     return (
         <div className="add-page">
-            <div className="container">
                 <div className="input-section">
+                    <div className="container">
                     <div className="input-section-title">
                        <h2 className="input-title">Welcome.</h2>
                         <h3 className="input-title-descr">Millions of movies, TV shows and people to discover. Explore now.</h3>
@@ -41,7 +40,9 @@ const AddFilm = () => {
                             search
                         </button>
                     </div>
+                        </div>
                 </div>
+            <div className="container">
                 {result.length ? (
                     <div className="results-inner">
                         <ul className="results">

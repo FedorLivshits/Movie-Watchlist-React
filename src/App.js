@@ -2,6 +2,7 @@ import React from "react";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Header from "./Components/Header";
 import "./App.css";
+import "./lib/font-awesome/css/all.min.css";
 import Watched from "./Components/Watched";
 import AddFilm from "./Components/AddFilm";
 import WatchList from "./Components/WatchList";
@@ -14,10 +15,10 @@ function App() {
             <Router>
                 <Header/>
                 <Switch>
-                    <Route exact path="/">
+                    <Route path="/watchlist">
                         <WatchList/>
                     </Route>
-                    <Route path="/add">
+                    <Route exact path="/">
                         <AddFilm/>
                     </Route>
                     <Route path="/watched">
