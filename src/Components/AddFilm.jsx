@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import axios from "axios";
 import ResultCard from "./ResultCard";
 
+
 const AddFilm = () => {
    const[inputText, setInputText] = useState('')
    const[result, setResult] = useState([])
@@ -36,7 +37,7 @@ const AddFilm = () => {
                     </div>
                     <div className="input-wrapper">
                         <input type="text" placeholder="Search for a movie" value={inputText} onChange={onInputChange}/>
-                        <button className="search-film-btn">
+                        <button  className="search-film-btn">
                             search
                         </button>
                     </div>

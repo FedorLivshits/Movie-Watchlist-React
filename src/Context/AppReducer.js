@@ -5,7 +5,7 @@ const AppReducer = (state, action) => {
                 ...state,
                 watchList: [action.payload, ...state.watchList ],
             };
-        case "SEND_MOVIE_TO_WATCHLIST":
+        case "SEND_MOVIE_TO_WATCHED":
             return {
                 ...state,
                 watched: [action.payload, ...state.watched ],

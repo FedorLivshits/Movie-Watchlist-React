@@ -39,10 +39,10 @@ const ResultCard = ({movie}) => {
                     </h4>
                 </div>
                <div className="controls">
-                   <button className="btn" onClick={() => addMovieToWatchlist(movie)} disabled={watchlistDisabled}>
+                   <button className="btn result" onClick={() => addMovieToWatchlist(movie)} disabled={watchlistDisabled}>
                        Add to watchlist
                    </button>
-                   <button className="btn" disabled={watchedDisabled} onClick={() => sendMovieToWatchlist(movie)}>
+                   <button className="btn result" disabled={watchedDisabled} onClick={() => sendMovieToWatchlist(movie)}>
                        Add to Watched
                    </button>
                </div>
